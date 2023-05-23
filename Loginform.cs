@@ -102,7 +102,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
                     MessageBox.Show("نام کاربری یا رمز عبور اشتباه است");
 
             }
-
+            sc.Close();
         }
 
         private void passwordTextBox_TextChanged(object sender, EventArgs e)

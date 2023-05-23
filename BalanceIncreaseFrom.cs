@@ -53,6 +53,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
                         continue;
                 }
             }
+            conn.Close();
         }
 
         private void GoToUserPannelButton_Click(object sender, EventArgs e)
@@ -110,6 +111,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
                 else
                     continue;
             }
+            conn3.Close();
             conn2.Close();
             conn.Close();
         }
