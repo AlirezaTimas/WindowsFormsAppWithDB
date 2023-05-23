@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WindowsFormsApp_Connected_To_LocalDB
 {
@@ -66,7 +68,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             string name = usernameTextBox.Text;
             string pass = passwordTextBox.Text;
-            SqlConnection sc = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\Visual Studio Projects\\WindowsFormsApp Connected To LocalDB\\Database1.mdf\";Integrated Security=True");
+            SqlConnection sc = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Markazi.co\\source\\repos\\AlirezaTimas\\WindowsFormsAppWithDB\\MainDataBase.mdf; Integrated Security = True");
             sc.Open();
             string query = "SELECT Username , Password , Id FROM users";
             SqlCommand command = new SqlCommand(query, sc);

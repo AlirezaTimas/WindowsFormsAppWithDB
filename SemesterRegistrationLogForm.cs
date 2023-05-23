@@ -24,7 +24,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             loglistbox.Enabled = false;
             string lfusername = userpannel.textBox1.Text;
-            SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\Visual Studio Projects\\WindowsFormsApp Connected To LocalDB\\Database1.mdf\";Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Markazi.co\\source\\repos\\AlirezaTimas\\WindowsFormsAppWithDB\\MainDataBase.mdf; Integrated Security = True");
             conn.Open();
             string query = "SELECT Fname , Lname , Studentnumber , usernameinsystem FROM Students ";
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -58,8 +58,8 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             loglistbox.Enabled = true;
             string check = StudentnumCB.Text;
-            SqlConnection sc = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\Visual Studio Projects\\WindowsFormsApp Connected To LocalDB\\Database1.mdf\";Integrated Security=True");
-            SqlConnection sc2 = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\Visual Studio Projects\\WindowsFormsApp Connected To LocalDB\\Database1.mdf\";Integrated Security=True");
+            SqlConnection sc = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Markazi.co\\source\\repos\\AlirezaTimas\\WindowsFormsAppWithDB\\MainDataBase.mdf; Integrated Security = True");
+            SqlConnection sc2 = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Markazi.co\\source\\repos\\AlirezaTimas\\WindowsFormsAppWithDB\\MainDataBase.mdf; Integrated Security = True");
 
             sc.Open();
             sc2.Open();

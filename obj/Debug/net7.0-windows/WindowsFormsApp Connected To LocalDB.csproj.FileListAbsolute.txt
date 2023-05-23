@@ -28,3 +28,33 @@ D:\Visual Studio Projects\WindowsFormsApp Connected To LocalDB\obj\Debug\net7.0-
 D:\Visual Studio Projects\WindowsFormsApp Connected To LocalDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.PaymentLogForm.resources
 D:\Visual Studio Projects\WindowsFormsApp Connected To LocalDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.SemesterRegistrationForm.resources
 D:\Visual Studio Projects\WindowsFormsApp Connected To LocalDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.SemesterRegistrationLogForm.resources
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.exe
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.deps.json
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.runtimeconfig.json
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.dll
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.pdb
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.AssemblyReference.cache
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.BalanceIncreaseFrom.resources
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.ExitForm.resources
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.Loginform.resources
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.PaymentLogForm.resources
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.SemesterRegistrationForm.resources
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.SemesterRegistrationLogForm.resources
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.Userpannel.resources
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.GenerateResource.cache
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.AssemblyInfoInputs.cache
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.AssemblyInfo.cs
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.CoreCompileInputs.cache
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.CopyComplete
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.dll
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\refint\WindowsFormsApp Connected To LocalDB.dll
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.pdb
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.genruntimeconfig.cache
+C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\ref\WindowsFormsApp Connected To LocalDB.dll
