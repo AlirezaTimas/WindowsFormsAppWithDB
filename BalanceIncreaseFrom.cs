@@ -27,7 +27,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
             this.Studentnumcombobox.DropDownStyle = ComboBoxStyle.DropDownList;
             string lfusername = userpannel.textBox1.Text;
 
-            SqlConnection conn = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Markazi.co\\source\\repos\\AlirezaTimas\\WindowsFormsAppWithDB\\MainDataBase.mdf; Integrated Security = True");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
             conn.Open();
             string queryf = "SELECT Fname , Lname , Studentnumber , usernameinsystem FROM Students ";
             SqlCommand cmd = new SqlCommand(queryf, conn);
@@ -65,9 +65,9 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         private void PayButton_Click(object sender, EventArgs e)
         {
             PaymentCode++;
-            SqlConnection conn = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Markazi.co\\source\\repos\\AlirezaTimas\\WindowsFormsAppWithDB\\MainDataBase.mdf; Integrated Security = True");
-            SqlConnection conn2 = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Markazi.co\\source\\repos\\AlirezaTimas\\WindowsFormsAppWithDB\\MainDataBase.mdf; Integrated Security = True");
-            SqlConnection conn3 = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Markazi.co\\source\\repos\\AlirezaTimas\\WindowsFormsAppWithDB\\MainDataBase.mdf; Integrated Security = True");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection conn2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection conn3 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
 
             conn.Open();
             conn2.Open();
@@ -129,7 +129,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
 
         private void Studentnumcombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Markazi.co\\source\\repos\\AlirezaTimas\\WindowsFormsAppWithDB\\MainDataBase.mdf; Integrated Security = True");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
             conn.Open();
             string query = "SELECT Fname , Lname , Fathername , Gender , Studentwalletbalance , Studentnumber FROM Students";
             SqlCommand cmd = new SqlCommand(query, conn);

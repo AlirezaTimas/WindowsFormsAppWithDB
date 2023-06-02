@@ -68,7 +68,8 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             string name = usernameTextBox.Text;
             string pass = passwordTextBox.Text;
-            SqlConnection sc = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Markazi.co\\source\\repos\\AlirezaTimas\\WindowsFormsAppWithDB\\MainDataBase.mdf; Integrated Security = True");
+            
+            SqlConnection sc = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
             sc.Open();
             string query = "SELECT Username , Password , Id FROM users";
             SqlCommand command = new SqlCommand(query, sc);

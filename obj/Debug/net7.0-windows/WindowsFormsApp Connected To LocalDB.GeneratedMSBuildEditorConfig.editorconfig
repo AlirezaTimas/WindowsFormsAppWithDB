@@ -14,4 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WindowsFormsApp_Connected_To_LocalDB
-build_property.ProjectDir = C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\
+build_property.ProjectDir = D:\Visual Studio Projects\AppWithDatabase\

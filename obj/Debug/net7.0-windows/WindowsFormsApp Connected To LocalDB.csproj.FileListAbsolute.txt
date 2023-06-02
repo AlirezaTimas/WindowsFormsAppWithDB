@@ -58,3 +58,33 @@ C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\ne
 C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.pdb
 C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.genruntimeconfig.cache
 C:\Users\Markazi.co\Source\Repos\AlirezaTimas\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\ref\WindowsFormsApp Connected To LocalDB.dll
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.exe
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.deps.json
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.runtimeconfig.json
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.dll
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.pdb
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Visual Studio Projects\AppWithDatabase\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.BalanceIncreaseFrom.resources
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.ExitForm.resources
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.Loginform.resources
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.PaymentLogForm.resources
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.SemesterRegistrationForm.resources
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.SemesterRegistrationLogForm.resources
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.Userpannel.resources
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.GenerateResource.cache
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.AssemblyInfoInputs.cache
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.AssemblyInfo.cs
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.CopyComplete
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.dll
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\refint\WindowsFormsApp Connected To LocalDB.dll
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.pdb
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.genruntimeconfig.cache
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\ref\WindowsFormsApp Connected To LocalDB.dll
