@@ -83,31 +83,31 @@ namespace WindowsFormsApp_Connected_To_LocalDB
                             string semestername = reader["SemesterName"].ToString();
                             string semestercode = reader["SemesterCode"].ToString();
                             string id = reader["Id"].ToString();
-                            string termregcode = reader["Termregcode"].ToString() ; 
+                            string termregcode = reader["Termregcode"].ToString();
                             string regdate = reader["RegistrationDate"].ToString();
                             string fname = reader2["Fname"].ToString();
                             string Lname = reader2["Lname"].ToString();
                             loglistbox.Items.Clear();
                             loglistbox.Items.Add("ثبت نام دانشجو با نام : " + fname + " " + Lname + " در ترم : " + semestername + " با کد ترم : " + semestercode + " در تاریخ : " + regdate + " با موفقیت انجام شد. ");
                             while (reader.Read())
-                            { 
+                            {
                                 int i = int.Parse(termregcode);
                                 string idd = reader["Id"].ToString();
                                 string num = reader["StudentNumber"].ToString();
                                 int j = int.Parse(termregcode);
-                                if (i==j++ && num == studentnumber)
+                                if (i == j++ && num == studentnumber)
                                 {
                                     string semesternamee = reader["SemesterName"].ToString();
                                     string semestercodee = reader["SemesterCode"].ToString();
-                                   string iddd = reader["Id"].ToString();
+                                    string iddd = reader["Id"].ToString();
                                     string regdatee = reader["RegistrationDate"].ToString();
                                     string fnamee = reader2["Fname"].ToString();
                                     string Lnamee = reader2["Lname"].ToString();
-                                   
+
                                     loglistbox.Items.Add("ثبت نام دانشجو با نام : " + fnamee + " " + Lnamee + " در ترم : " + semesternamee + " با کد ترم : " + semestercodee + " در تاریخ : " + regdatee + " با موفقیت انجام شد. ");
-                                  
+
                                 }
-                                
+
                             }
                         }
                         else

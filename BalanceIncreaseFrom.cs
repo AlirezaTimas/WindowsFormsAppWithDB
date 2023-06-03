@@ -61,10 +61,11 @@ namespace WindowsFormsApp_Connected_To_LocalDB
             this.Hide();
             userpannel.Show();
         }
-        int PaymentCode = 1000;
+        public int PaymentCode= 1000;
         private void PayButton_Click(object sender, EventArgs e)
         {
             PaymentCode++;
+            
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
             SqlConnection conn2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
             SqlConnection conn3 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");

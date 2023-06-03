@@ -30,8 +30,8 @@ namespace WindowsFormsApp_Connected_To_LocalDB
             conn2.Open();
             conn.Open();
             string check = Studentnumcombobox.Text;
-            string query = "SELECT Studentnumber , Fname , Lname FROM Students ";
-            string query2 = "SELECT Submitter , Receiver , Amount , PaymentCode , PaymentDate FROM Payments";
+            string query = "SELECT Id, Studentnumber , Fname , Lname FROM Students ";
+            string query2 = "SELECT Id, Submitter , Receiver , Amount , PaymentCode , PaymentDate FROM Payments";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlCommand cmd2 = new SqlCommand(query2, conn2);
             SqlDataReader reader = cmd.ExecuteReader();
@@ -54,15 +54,18 @@ namespace WindowsFormsApp_Connected_To_LocalDB
                             string PaymentDate = reader2["PaymentDate"].ToString();
                             string fname = reader["Fname"].ToString();
                             string Lname = reader["Lname"].ToString();
+                            string id1 = reader2["Id"].ToString();
                             Loglistbox.Items.Clear();
                             Loglistbox.Items.Add(" نام : " + fname + " " + Lname + " مبلغ : " + Amount + " دریافت کننده : " + receiver + " شماره پرداخت : " + Paymentcode + " تاریخ پرداخت : " + PaymentDate + " ");
                             while (reader2.Read())
                             {
-                                int i = int.Parse(Paymentcode);
-                                string paymentcode = reader2["PaymentCode"].ToString();
-                                int j = int.Parse(paymentcode);
+                                int i = int.Parse(id1);
+                                string id2 = reader2["Id"].ToString();
+                                string studentcode = reader["StudentNumber"].ToString();
 
-                                if (i == j++)
+                                int j = int.Parse(id2);
+
+                                if (j > i && check == studentcode)
                                 {
                                     string receivere = reader2["Receiver"].ToString();
                                     string Amounte = reader2["Amount"].ToString();
@@ -74,6 +77,8 @@ namespace WindowsFormsApp_Connected_To_LocalDB
                                     Loglistbox.Items.Add(" نام : " + fnamee + " " + Lnamee + " مبلغ : " + Amounte + " دریافت کننده : " + receivere + " شماره پرداخت : " + Paymentcodee + " تاریخ پرداخت : " + PaymentDatee + " ");
 
                                 }
+                                else
+                                    continue;
 
                             }
                         }

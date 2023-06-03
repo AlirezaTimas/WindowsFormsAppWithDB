@@ -13,12 +13,12 @@ namespace WindowsFormsApp_Connected_To_LocalDB
     public partial class Userpannel : Form
     {
         public Loginform loginform;
-        ExitForm exitform = new ExitForm();
+        public ExitForm exitform = new ExitForm();
         public SemesterRegistrationForm tuitionp = new SemesterRegistrationForm();
         public BalanceIncreaseFrom balancep = new BalanceIncreaseFrom();
         public PaymentLogForm paymentlogform = new PaymentLogForm();
         public SemesterRegistrationLogForm serlform = new SemesterRegistrationLogForm();
-
+        public LessonChoosingForm lessonform = new LessonChoosingForm();
         public Userpannel()
         {
             InitializeComponent();
@@ -27,6 +27,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
             balancep.userpannel = this;
             paymentlogform.userpannel = this;
             serlform.userpannel = this;
+            lessonform.userpannel = this;
             balancep.tuitionpannel = tuitionp;
             tuitionp.balanceform = balancep;
             balancep.paymentlogform = paymentlogform;
@@ -86,6 +87,12 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             this.Hide();
             serlform.Show();
+        }
+
+        private void ChoosingLessonButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            lessonform.Show();
         }
     }
 }

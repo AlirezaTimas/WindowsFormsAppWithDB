@@ -88,3 +88,4 @@ D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\refint\Window
 D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.pdb
 D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.genruntimeconfig.cache
 D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\ref\WindowsFormsApp Connected To LocalDB.dll
+D:\Visual Studio Projects\AppWithDatabase\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.LessonChoosingForm.resources
