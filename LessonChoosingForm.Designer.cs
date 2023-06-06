@@ -40,6 +40,7 @@
             label3 = new Label();
             label2 = new Label();
             listBox1 = new ListBox();
+            button1 = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -165,11 +166,22 @@
             listBox1.Size = new Size(477, 154);
             listBox1.TabIndex = 0;
             // 
+            // button1
+            // 
+            button1.Location = new Point(609, 193);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // LessonChoosingForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(804, 450);
+            Controls.Add(button1);
             Controls.Add(groupBox1);
             Controls.Add(label1);
             Controls.Add(Studentnumcombobox);
@@ -197,5 +209,6 @@
         private Label label7;
         private Label label6;
         private Label label9;
+        private Button button1;
     }
 }

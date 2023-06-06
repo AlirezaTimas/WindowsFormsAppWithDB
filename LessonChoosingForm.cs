@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,7 +28,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             string lfusername = userpannel.textBox1.Text;
             groupBox1.Enabled = false;
-
+            listBox1.ScrollAlwaysVisible = true;
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
             conn.Open();
             string queryf = "SELECT Fname , Lname , Studentnumber , usernameinsystem FROM Students ";
@@ -117,89 +118,78 @@ namespace WindowsFormsApp_Connected_To_LocalDB
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
             SqlConnection conn2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
             SqlConnection conn3 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
-
+            SqlConnection conn4 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
             conn.Open();
             conn2.Open();
             conn3.Open();
+          
             string query = "SELECT Id, Fname , Lname , Fathername , Gender , Studentwalletbalance , Studentnumber , CurrentTerm FROM Students";
             string query2 = "SELECT Id, Submitternumber ,Submittedlessonname , Submittedlessoncode FROM LessonChoosingLog";
-            string query3 = "SELECT Id , Lessonname , Lessoncode , Teachersname , classtime , classday , examdate From Lessons";
-            SqlCommand cmd3 = new SqlCommand(query3, conn3);
-            SqlCommand cmd2 = new SqlCommand(query2, conn2);
+            string query3 = "SELECT * FROM Students";
             SqlCommand cmd = new SqlCommand(query, conn);
+            SqlCommand cmd2 = new SqlCommand(query2, conn2);
+            SqlCommand cmd3 = new SqlCommand(query3, conn3);
+
             SqlDataReader studentreader = cmd.ExecuteReader();
             SqlDataReader logreader = cmd2.ExecuteReader();
-            SqlDataReader lessonreader = cmd3.ExecuteReader();
+          
             string check = Studentnumcombobox.Text;
-            int counter = 1000;
-            while (studentreader.Read())
+
+            // below codes are used to get the number of rows in the lessonchoosinglog table from database
+            SqlDataAdapter sda = new SqlDataAdapter(cmd3);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            ds.Tables[0].Rows.Count.ToString();
+            int rowcount = ds.Tables[0].Rows.Count;
+      
+     
+            while (logreader.Read())
             {
-                string studentnumber = studentreader["Studentnumber"].ToString();
-                if (studentnumber == check)
+                string submitternumber = logreader["Submitternumber"].ToString();
+                int intcheck = int.Parse(check);
+                int subnum = int.Parse(submitternumber);
+                if (intcheck == subnum)
                 {
-                    while (logreader.Read())
-                    {
-                        string submitter = logreader["Submitternumber"].ToString();
 
-                        if (submitter == studentnumber)
-                        {
-                            while (lessonreader.Read())
-                            {
-                                string submittedcode = logreader["Submittedlessoncode"].ToString();
-                                string lessoncode = lessonreader["Lessoncode"].ToString();
+                   
+                    string submittedlessoncode = logreader["Submittedlessoncode"].ToString();
+                    string lquery = "SELECT * FROM Lessons WHERE Lessoncode='" + submittedlessoncode + "' ";
+              SqlCommand cmd4 = new SqlCommand(lquery, conn4);
+                    conn4.Open();
+                    SqlDataReader reader = cmd4.ExecuteReader();
+                   
+                    reader.Read();
+                    string teachersname2 = reader["teachersname"].ToString();
+                    string classtime2 = reader["classtime"].ToString();
+                    string classday2 = reader["classday"].ToString();
+                    string examdate2 = reader["examdate"].ToString();
+                    string lessonname2 = reader["lessonname"].ToString();
 
-                                if (submittedcode == lessoncode)
-                                {
-                                    string teachersname = lessonreader["Teachersname"].ToString();
-                                    string classtime = lessonreader["classtime"].ToString();
-                                    string classday = lessonreader["classday"].ToString();
-                                    string examdate = lessonreader["examdate"].ToString();
-                                    string lessonname = lessonreader["Lessonname"].ToString();
-                                    string id = logreader["Id"].ToString();
-                                    listBox1.Items.Add(" نام درس : " + lessonname + " | " + " نام استاد : " + teachersname + " | " + " روز و ساعت کلاس : " + classday + " " + classtime + " | " + " تاریخ امتحان : " + examdate + " ");
-                                    while (logreader.Read())
-                                    {
-                                        string submitter2 = logreader["submitternumber"].ToString();
-                                        int idd = int.Parse(id);
-                                        string id2 = logreader["id"].ToString();
-                                        int idd2 = int.Parse(id2);
-                                        if (idd2 > idd && submitter2 == check)
-                                        {
-                                            while (lessonreader.Read())
-                                            {
-                                                string submittedcode2 = logreader["submittedlessoncode"].ToString();
-                                                string lessoncode2 = lessonreader["lessoncode"].ToString();
-                                                if (submittedcode2 == lessoncode2)
-                                                {
-                                                    string teachersname2 = lessonreader["teachersname"].ToString();
-                                                    string classtime2 = lessonreader["classtime"].ToString();
-                                                    string classday2 = lessonreader["classday"].ToString();
-                                                    string examdate2 = lessonreader["examdate"].ToString();
-                                                    string lessonname2 = lessonreader["lessonname"].ToString();
 
-                                                    listBox1.Items.Add(" نام درس : " + lessonname2 + " | " + " نام استاد : " + teachersname2 + " | " + " روز و ساعت کلاس : " + classday2 + " " + classtime2 + " | " + " تاریخ امتحان : " + examdate2 + " ");
-
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                    }
-
+                    listBox1.Items.Add(" نام درس : " + lessonname2 + " | " + " نام استاد : " + teachersname2 + " | " + " روز و ساعت کلاس : " + classday2 + " " + classtime2 + " | " + " تاریخ امتحان : " + examdate2 + " ");
+                    conn4.Close();
                 }
+                else
+                    continue;
             }
-        
+            
+      
+           
+
             conn.Close();
             conn2.Close();
             conn3.Close();
+            conn4.Close();
         }
         private void LessonChoosingForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
             userpannel.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
@@ -208,9 +198,34 @@ namespace WindowsFormsApp_Connected_To_LocalDB
 
 
 
+//string query3 = "SELECT Id , Lessonname , Lessoncode , Teachersname , classtime , classday , examdate From Lessons";
 
+//while (logreader.Read())
+//{
+//    string submitter2 = logreader["submitternumber"].ToString();
+//    int idd = int.Parse(id);
+//    string id2 = logreader["id"].ToString();
+//    int idd2 = int.Parse(id2);
+//    if (idd2 > idd && submitter2 == check)
+//    {
+//        while (lessonreader.Read())
+//        {
+//            string submittedcode2 = logreader["submittedlessoncode"].ToString();
+//            string lessoncode2 = lessonreader["lessoncode"].ToString();
+//            if (submittedcode2 == lessoncode2)
+//            {
+//                string teachersname2 = lessonreader["teachersname"].ToString();
+//                string classtime2 = lessonreader["classtime"].ToString();
+//                string classday2 = lessonreader["classday"].ToString();
+//                string examdate2 = lessonreader["examdate"].ToString();
+//                string lessonname2 = lessonreader["lessonname"].ToString();
 
+//                listBox1.Items.Add(" نام درس : " + lessonname2 + " | " + " نام استاد : " + teachersname2 + " | " + " روز و ساعت کلاس : " + classday2 + " " + classtime2 + " | " + " تاریخ امتحان : " + examdate2 + " ");
 
+//            }
+//        }
+//    }
+//}
 
 
 
