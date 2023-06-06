@@ -31,32 +31,31 @@
             Studentnumcombobox = new ComboBox();
             label1 = new Label();
             groupBox1 = new GroupBox();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
+            genderllabel = new Label();
+            fathernlabel = new Label();
+            namelabel = new Label();
             listBox1 = new ListBox();
-            button1 = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // Studentnumcombobox
             // 
             Studentnumcombobox.FormattingEnabled = true;
-            Studentnumcombobox.Location = new Point(511, 84);
+            Studentnumcombobox.Location = new Point(521, 98);
             Studentnumcombobox.Name = "Studentnumcombobox";
-            Studentnumcombobox.Size = new Size(281, 33);
+            Studentnumcombobox.Size = new Size(267, 33);
             Studentnumcombobox.TabIndex = 0;
             Studentnumcombobox.SelectedIndexChanged += Studentnumcombobox_SelectedIndexChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(507, 45);
+            label1.Location = new Point(507, 54);
             label1.Name = "label1";
             label1.Size = new Size(281, 25);
             label1.TabIndex = 1;
@@ -64,129 +63,111 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(label9);
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(genderllabel);
+            groupBox1.Controls.Add(fathernlabel);
+            groupBox1.Controls.Add(namelabel);
             groupBox1.Controls.Add(listBox1);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(12, 9);
             groupBox1.Name = "groupBox1";
             groupBox1.RightToLeft = RightToLeft.Yes;
-            groupBox1.Size = new Size(489, 426);
+            groupBox1.Size = new Size(489, 429);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "اطلاعات فردی دانشجو";
             // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(123, 229);
-            label9.Name = "label9";
-            label9.Size = new Size(360, 25);
-            label9.TabIndex = 8;
-            label9.Text = "دروس انتخاب شده توسط دانشجو در ترم کنونی";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(388, 140);
-            label8.Name = "label8";
-            label8.RightToLeft = RightToLeft.Yes;
-            label8.Size = new Size(81, 25);
-            label8.TabIndex = 7;
-            label8.Text = "جنسیت : ";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(393, 101);
-            label7.Name = "label7";
-            label7.RightToLeft = RightToLeft.Yes;
-            label7.Size = new Size(76, 25);
-            label7.TabIndex = 6;
-            label7.Text = "نام پدر : ";
-            // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(306, 53);
+            label6.Location = new Point(81, 236);
             label6.Name = "label6";
-            label6.RightToLeft = RightToLeft.Yes;
-            label6.Size = new Size(163, 25);
-            label6.TabIndex = 5;
-            label6.Text = "نام و نام خانوادگی : ";
+            label6.Size = new Size(402, 25);
+            label6.TabIndex = 9;
+            label6.Text = "دروس انتخاب شده توسط این دانشجو در ترم کنونی : ";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(182, 181);
+            label5.Location = new Point(187, 194);
             label5.Name = "label5";
-            label5.RightToLeft = RightToLeft.Yes;
             label5.Size = new Size(0, 25);
-            label5.TabIndex = 4;
+            label5.TabIndex = 8;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(282, 140);
+            label4.Location = new Point(273, 132);
             label4.Name = "label4";
-            label4.RightToLeft = RightToLeft.Yes;
             label4.Size = new Size(0, 25);
-            label4.TabIndex = 3;
+            label4.TabIndex = 7;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(282, 101);
+            label3.Location = new Point(273, 89);
             label3.Name = "label3";
-            label3.RightToLeft = RightToLeft.Yes;
             label3.Size = new Size(0, 25);
-            label3.TabIndex = 2;
+            label3.TabIndex = 6;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(191, 53);
+            label2.Location = new Point(206, 45);
             label2.Name = "label2";
-            label2.RightToLeft = RightToLeft.Yes;
             label2.Size = new Size(0, 25);
-            label2.TabIndex = 1;
+            label2.TabIndex = 5;
             label2.TextChanged += label2_TextChanged;
+            // 
+            // genderllabel
+            // 
+            genderllabel.AutoSize = true;
+            genderllabel.Location = new Point(402, 132);
+            genderllabel.Name = "genderllabel";
+            genderllabel.Size = new Size(81, 25);
+            genderllabel.TabIndex = 3;
+            genderllabel.Text = "جنسیت : ";
+            // 
+            // fathernlabel
+            // 
+            fathernlabel.AutoSize = true;
+            fathernlabel.Location = new Point(412, 89);
+            fathernlabel.Name = "fathernlabel";
+            fathernlabel.Size = new Size(71, 25);
+            fathernlabel.TabIndex = 2;
+            fathernlabel.Text = "نام پدر :";
+            // 
+            // namelabel
+            // 
+            namelabel.AutoSize = true;
+            namelabel.Location = new Point(320, 45);
+            namelabel.Name = "namelabel";
+            namelabel.Size = new Size(163, 25);
+            namelabel.TabIndex = 1;
+            namelabel.Text = "نام و نام خانوادگی : ";
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 25;
-            listBox1.Location = new Point(6, 266);
+            listBox1.Location = new Point(6, 273);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(477, 154);
             listBox1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(609, 193);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 3;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // LessonChoosingForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(804, 450);
-            Controls.Add(button1);
+            ClientSize = new Size(800, 450);
             Controls.Add(groupBox1);
             Controls.Add(label1);
             Controls.Add(Studentnumcombobox);
             Name = "LessonChoosingForm";
-            Text = "پنل انتخاب واحد";
+            Text = "LessonChoosingForm";
             FormClosing += LessonChoosingForm_FormClosing;
             Load += LessonChoosingForm_Load;
             groupBox1.ResumeLayout(false);
@@ -200,15 +181,14 @@
         private ComboBox Studentnumcombobox;
         private Label label1;
         private GroupBox groupBox1;
+        private Label namelabel;
         private ListBox listBox1;
+        private Label genderllabel;
+        private Label fathernlabel;
+        private Label label2;
         private Label label5;
         private Label label4;
         private Label label3;
-        private Label label2;
-        private Label label8;
-        private Label label7;
         private Label label6;
-        private Label label9;
-        private Button button1;
     }
 }

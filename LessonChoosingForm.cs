@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace WindowsFormsApp_Connected_To_LocalDB
 {
@@ -122,7 +123,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
             conn.Open();
             conn2.Open();
             conn3.Open();
-          
+
             string query = "SELECT Id, Fname , Lname , Fathername , Gender , Studentwalletbalance , Studentnumber , CurrentTerm FROM Students";
             string query2 = "SELECT Id, Submitternumber ,Submittedlessonname , Submittedlessoncode FROM LessonChoosingLog";
             string query3 = "SELECT * FROM Students";
@@ -132,7 +133,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
 
             SqlDataReader studentreader = cmd.ExecuteReader();
             SqlDataReader logreader = cmd2.ExecuteReader();
-          
+
             string check = Studentnumcombobox.Text;
 
             // below codes are used to get the number of rows in the lessonchoosinglog table from database
@@ -141,8 +142,8 @@ namespace WindowsFormsApp_Connected_To_LocalDB
             sda.Fill(ds);
             ds.Tables[0].Rows.Count.ToString();
             int rowcount = ds.Tables[0].Rows.Count;
-      
-     
+
+
             while (logreader.Read())
             {
                 string submitternumber = logreader["Submitternumber"].ToString();
@@ -151,13 +152,13 @@ namespace WindowsFormsApp_Connected_To_LocalDB
                 if (intcheck == subnum)
                 {
 
-                   
+
                     string submittedlessoncode = logreader["Submittedlessoncode"].ToString();
                     string lquery = "SELECT * FROM Lessons WHERE Lessoncode='" + submittedlessoncode + "' ";
-              SqlCommand cmd4 = new SqlCommand(lquery, conn4);
+                    SqlCommand cmd4 = new SqlCommand(lquery, conn4);
                     conn4.Open();
                     SqlDataReader reader = cmd4.ExecuteReader();
-                   
+
                     reader.Read();
                     string teachersname2 = reader["teachersname"].ToString();
                     string classtime2 = reader["classtime"].ToString();
@@ -172,9 +173,9 @@ namespace WindowsFormsApp_Connected_To_LocalDB
                 else
                     continue;
             }
-            
-      
-           
+
+
+
 
             conn.Close();
             conn2.Close();
@@ -185,11 +186,6 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             this.Hide();
             userpannel.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 
