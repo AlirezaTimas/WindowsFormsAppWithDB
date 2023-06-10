@@ -54,7 +54,7 @@
             // WalletButton
             // 
             WalletButton.ForeColor = Color.FromArgb(0, 0, 192);
-            WalletButton.Location = new Point(12, 89);
+            WalletButton.Location = new Point(292, 89);
             WalletButton.Margin = new Padding(4);
             WalletButton.Name = "WalletButton";
             WalletButton.Size = new Size(260, 84);
@@ -70,7 +70,7 @@
             TuitionLogButton.Margin = new Padding(4);
             TuitionLogButton.Name = "TuitionLogButton";
             TuitionLogButton.Size = new Size(252, 80);
-            TuitionLogButton.TabIndex = 6;
+            TuitionLogButton.TabIndex = 8;
             TuitionLogButton.Text = "تاریخچه ثبت نام ترم";
             TuitionLogButton.UseVisualStyleBackColor = true;
             TuitionLogButton.Click += TuitionLogButton_Click;
@@ -78,11 +78,11 @@
             // WalletPaymentsLogButton
             // 
             WalletPaymentsLogButton.ForeColor = Color.FromArgb(0, 0, 192);
-            WalletPaymentsLogButton.Location = new Point(12, 199);
+            WalletPaymentsLogButton.Location = new Point(291, 199);
             WalletPaymentsLogButton.Margin = new Padding(4);
             WalletPaymentsLogButton.Name = "WalletPaymentsLogButton";
             WalletPaymentsLogButton.Size = new Size(261, 80);
-            WalletPaymentsLogButton.TabIndex = 8;
+            WalletPaymentsLogButton.TabIndex = 10;
             WalletPaymentsLogButton.Text = "تاریخچه شارژحساب";
             WalletPaymentsLogButton.UseVisualStyleBackColor = true;
             WalletPaymentsLogButton.Click += WalletPaymentsLogButton_Click;
@@ -94,7 +94,7 @@
             ExitButton.Margin = new Padding(4);
             ExitButton.Name = "ExitButton";
             ExitButton.Size = new Size(210, 80);
-            ExitButton.TabIndex = 10;
+            ExitButton.TabIndex = 14;
             ExitButton.Text = "خروج از برنامه";
             ExitButton.UseVisualStyleBackColor = true;
             ExitButton.Click += ExitButton_Click;
@@ -122,26 +122,27 @@
             // 
             // ChoosingLessonButton
             // 
-            ChoosingLessonButton.ForeColor = Color.Black;
-            ChoosingLessonButton.Location = new Point(300, 91);
+            ChoosingLessonButton.ForeColor = Color.Purple;
+            ChoosingLessonButton.Location = new Point(21, 89);
             ChoosingLessonButton.Margin = new Padding(4);
             ChoosingLessonButton.Name = "ChoosingLessonButton";
             ChoosingLessonButton.Size = new Size(252, 80);
-            ChoosingLessonButton.TabIndex = 13;
+            ChoosingLessonButton.TabIndex = 6;
             ChoosingLessonButton.Text = "انتخاب واحد";
             ChoosingLessonButton.UseVisualStyleBackColor = true;
             ChoosingLessonButton.Click += ChoosingLessonButton_Click;
             // 
             // LessonsLog
             // 
-            LessonsLog.ForeColor = Color.Black;
-            LessonsLog.Location = new Point(300, 199);
+            LessonsLog.ForeColor = Color.Purple;
+            LessonsLog.Location = new Point(21, 199);
             LessonsLog.Margin = new Padding(4);
             LessonsLog.Name = "LessonsLog";
             LessonsLog.Size = new Size(252, 80);
-            LessonsLog.TabIndex = 14;
-            LessonsLog.Text = "تاریخچه انتخاب واحد";
+            LessonsLog.TabIndex = 13;
+            LessonsLog.Text = "فرم واحد های انتخاب شده";
             LessonsLog.UseVisualStyleBackColor = true;
+            LessonsLog.Click += LessonsLog_Click;
             // 
             // Userpannel
             // 

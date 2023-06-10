@@ -15,6 +15,8 @@ namespace WindowsFormsApp_Connected_To_LocalDB
     {
         public Userpannel userpannel;
         public SemesterRegistrationForm semesterregform;
+        string directory = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
+
         public SemesterRegistrationLogForm()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             loglistbox.Enabled = false;
             string lfusername = userpannel.textBox1.Text;
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
             conn.Open();
             string query = "SELECT Fname , Lname , Studentnumber , usernameinsystem FROM Students ";
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -58,8 +60,8 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             loglistbox.Enabled = true;
             string check = StudentnumCB.Text;
-            SqlConnection sc = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
-            SqlConnection sc2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection sc = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
+            SqlConnection sc2= new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
 
             sc.Open();
             sc2.Open();

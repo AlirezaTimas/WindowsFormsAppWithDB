@@ -18,6 +18,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         public Userpannel userpannel;
         public BalanceIncreaseFrom balanceform;
         public SemesterRegistrationLogForm semlogform;
+        string directory = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
 
         public SemesterRegistrationForm()
         {
@@ -35,7 +36,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
 
 
             string lfusername = userpannel.textBox1.Text;
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
             conn.Open();
             string queryf = "SELECT Fname , Lname , Studentnumber , usernameinsystem FROM Students ";
             string querysec = "SELECT Termname , termcode FROM Terms";
@@ -91,7 +92,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             groupBox1.Enabled = true;
             TermComboB.Enabled = true;
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
             conn.Open();
             string query = "SELECT Fname , Lname , Studentnumber , Birthplace , Fathername , Gender FROM Students";
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -121,7 +122,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             groupBox1.Enabled = true;
             TermComboB.Enabled = true;
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
             conn.Open();
             string query = "SELECT Fname , Lname , Studentnumber , Birthplace , Fathername , Gender , studentwalletbalance FROM Students";
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -151,7 +152,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
 
         private void TermComboB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
             connection.Open();
             string query = "SELECT studentwalletbalance , Studentnumber FROM Students";
             SqlCommand cmd = new SqlCommand(query, connection);
@@ -194,10 +195,10 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         private void PayButton_Click(object sender, EventArgs e)
         {
             termregcode++;
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
-            SqlConnection connection2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
-            SqlConnection connection3 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
-            SqlConnection connection4 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
+            SqlConnection connection2 = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
+            SqlConnection connection3 = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
+            SqlConnection connection4 = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
 
             connection.Open();
             connection2.Open();
@@ -238,7 +239,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
                             if (studentwalletbalancee >= termpricee)
                             {
                                 string date = DateTime.Now.ToString();
-                                string query3 = "INSERT INTO SemesterRegistrations (SemesterName,SemesterCode,StudentNumber,RegistrationDate,Termregcode) VALUES ('" + termname + "','" + termcode + "','" + studentnumber + "','" + date + "','" + termregcode+"')";
+                                string query3 = "INSERT INTO SemesterRegistrations (SemesterName,SemesterCode,StudentNumber,RegistrationDate,Termregcode) VALUES ('" + termname + "','" + termcode + "','" + studentnumber + "','" + date + "','" + termregcode + "')";
                                 SqlCommand command3 = new SqlCommand(query3, connection3);
                                 command3.ExecuteNonQuery();
                                 MessageBox.Show("ثبت نام شما با موفقیت انجام شد");
@@ -290,7 +291,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection connection = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
             connection.Open();
             string query = "SELECT studentwalletbalance , Studentnumber FROM Students";
             SqlCommand cmd = new SqlCommand(query, connection);

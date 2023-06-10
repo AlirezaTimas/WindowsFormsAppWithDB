@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TTTT\\WindowsFormsAppWithDB\\WindowsFormsApp Connected To LocalDB.csproj": {}
+    "D:\\Fixed File\\WindowsFormsAppWithDB\\WindowsFormsApp Connected To LocalDB.csproj": {}
   },
   "projects": {
-    "D:\\TTTT\\WindowsFormsAppWithDB\\WindowsFormsApp Connected To LocalDB.csproj": {
+    "D:\\Fixed File\\WindowsFormsAppWithDB\\WindowsFormsApp Connected To LocalDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TTTT\\WindowsFormsAppWithDB\\WindowsFormsApp Connected To LocalDB.csproj",
+        "projectUniqueName": "D:\\Fixed File\\WindowsFormsAppWithDB\\WindowsFormsApp Connected To LocalDB.csproj",
         "projectName": "WindowsFormsApp Connected To LocalDB",
-        "projectPath": "D:\\TTTT\\WindowsFormsAppWithDB\\WindowsFormsApp Connected To LocalDB.csproj",
+        "projectPath": "D:\\Fixed File\\WindowsFormsAppWithDB\\WindowsFormsApp Connected To LocalDB.csproj",
         "packagesPath": "C:\\Users\\Markazi.co\\.nuget\\packages\\",
-        "outputPath": "D:\\TTTT\\WindowsFormsAppWithDB\\obj\\",
+        "outputPath": "D:\\Fixed File\\WindowsFormsAppWithDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Markazi.co\\AppData\\Roaming\\NuGet\\NuGet.Config",

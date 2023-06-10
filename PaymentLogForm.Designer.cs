@@ -57,6 +57,7 @@
             // 
             // Studentnumcombobox
             // 
+            Studentnumcombobox.DropDownStyle = ComboBoxStyle.DropDownList;
             Studentnumcombobox.FormattingEnabled = true;
             Studentnumcombobox.Location = new Point(703, 182);
             Studentnumcombobox.Name = "Studentnumcombobox";

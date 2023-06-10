@@ -15,6 +15,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
     {
         public Userpannel userpannel;
         public BalanceIncreaseFrom balanceform;
+        string directory = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
 
         public PaymentLogForm()
         {
@@ -25,8 +26,8 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             Loglistbox.Items.Clear();
             Loglistbox.Enabled = true;
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
-            SqlConnection conn2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
+            SqlConnection conn2 = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
             conn2.Open();
             conn.Open();
             string check = Studentnumcombobox.Text;
@@ -98,7 +99,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             Loglistbox.Enabled = false;
             string lfusername = userpannel.textBox1.Text;
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=" + directory + "\\MainDataBase.mdf;Integrated Security=True;");
             conn.Open();
             string query = "SELECT Fname , Lname , Studentnumber , usernameinsystem FROM Students ";
             SqlCommand cmd = new SqlCommand(query, conn);

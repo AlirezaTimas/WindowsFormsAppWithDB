@@ -38,20 +38,21 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(512, 106);
+            label1.Location = new Point(640, 139);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(220, 19);
+            label1.Size = new Size(281, 25);
             label1.TabIndex = 0;
             label1.Text = "شماره دانشجویی خود را انتخاب کنید";
             // 
             // StudentnumCB
             // 
+            StudentnumCB.DropDownStyle = ComboBoxStyle.DropDownList;
             StudentnumCB.FormattingEnabled = true;
-            StudentnumCB.Location = new Point(518, 138);
-            StudentnumCB.Margin = new Padding(2, 2, 2, 2);
+            StudentnumCB.Location = new Point(648, 182);
+            StudentnumCB.Margin = new Padding(2, 3, 2, 3);
             StudentnumCB.Name = "StudentnumCB";
-            StudentnumCB.Size = new Size(219, 27);
+            StudentnumCB.Size = new Size(273, 33);
             StudentnumCB.TabIndex = 1;
             StudentnumCB.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
@@ -59,21 +60,21 @@
             // 
             loglistbox.FormattingEnabled = true;
             loglistbox.HorizontalScrollbar = true;
-            loglistbox.ItemHeight = 19;
-            loglistbox.Location = new Point(10, 9);
-            loglistbox.Margin = new Padding(2, 2, 2, 2);
+            loglistbox.ItemHeight = 25;
+            loglistbox.Location = new Point(12, 12);
+            loglistbox.Margin = new Padding(2, 3, 2, 3);
             loglistbox.Name = "loglistbox";
             loglistbox.RightToLeft = RightToLeft.Yes;
-            loglistbox.Size = new Size(496, 403);
+            loglistbox.Size = new Size(619, 529);
             loglistbox.TabIndex = 2;
             // 
             // GoToPayFormButton
             // 
             GoToPayFormButton.ForeColor = Color.ForestGreen;
-            GoToPayFormButton.Location = new Point(543, 210);
-            GoToPayFormButton.Margin = new Padding(2, 2, 2, 2);
+            GoToPayFormButton.Location = new Point(679, 276);
+            GoToPayFormButton.Margin = new Padding(2, 3, 2, 3);
             GoToPayFormButton.Name = "GoToPayFormButton";
-            GoToPayFormButton.Size = new Size(171, 58);
+            GoToPayFormButton.Size = new Size(214, 76);
             GoToPayFormButton.TabIndex = 3;
             GoToPayFormButton.Text = "صفحه ثبت نام";
             GoToPayFormButton.UseVisualStyleBackColor = true;
@@ -82,10 +83,10 @@
             // GoToUserPannelButton
             // 
             GoToUserPannelButton.ForeColor = Color.Red;
-            GoToUserPannelButton.Location = new Point(543, 289);
-            GoToUserPannelButton.Margin = new Padding(2, 2, 2, 2);
+            GoToUserPannelButton.Location = new Point(679, 380);
+            GoToUserPannelButton.Margin = new Padding(2, 3, 2, 3);
             GoToUserPannelButton.Name = "GoToUserPannelButton";
-            GoToUserPannelButton.Size = new Size(171, 56);
+            GoToUserPannelButton.Size = new Size(214, 74);
             GoToUserPannelButton.TabIndex = 4;
             GoToUserPannelButton.Text = "بازگشت به پنل کاربری";
             GoToUserPannelButton.UseVisualStyleBackColor = true;
@@ -93,15 +94,15 @@
             // 
             // SemesterRegistrationLogForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(746, 420);
+            ClientSize = new Size(932, 553);
             Controls.Add(GoToUserPannelButton);
             Controls.Add(GoToPayFormButton);
             Controls.Add(loglistbox);
             Controls.Add(StudentnumCB);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2, 3, 2, 3);
             Name = "SemesterRegistrationLogForm";
             Text = "تاریخچه ثبت نام ترمی";
             FormClosing += SemesterRegistrationLogForm_FormClosing;

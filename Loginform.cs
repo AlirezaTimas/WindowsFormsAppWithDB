@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -27,7 +28,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         Userpannel userp = new Userpannel();
         ExitForm exitform = new ExitForm();
         SemesterRegistrationForm tuitionp = new SemesterRegistrationForm();
-       
+
 
         private void usernameTextBox_Enter(object sender, EventArgs e)
         {
@@ -68,8 +69,9 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             string name = usernameTextBox.Text;
             string pass = passwordTextBox.Text;
-            
-            SqlConnection sc = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Visual Studio Projects\AppWithDatabase\MainDataBase.mdf"";Integrated Security=True");
+
+            string directory = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
+            SqlConnection sc = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename="+directory+"\\MainDataBase.mdf;Integrated Security=True;");
             sc.Open();
             string query = "SELECT Username , Password , Id FROM users";
             SqlCommand command = new SqlCommand(query, sc);

@@ -120,3 +120,35 @@ D:\TTTT\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\refint\WindowsFormsApp Co
 D:\TTTT\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.pdb
 D:\TTTT\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.genruntimeconfig.cache
 D:\TTTT\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\ref\WindowsFormsApp Connected To LocalDB.dll
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.exe
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.deps.json
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.runtimeconfig.json
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.dll
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.pdb
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Fixed File\WindowsFormsAppWithDB\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.AssemblyReference.cache
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.BalanceIncreaseFrom.resources
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.ExitForm.resources
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.LessonChoosingForm.resources
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.Loginform.resources
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.PaymentLogForm.resources
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.SemesterRegistrationForm.resources
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.SemesterRegistrationLogForm.resources
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.Userpannel.resources
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.GenerateResource.cache
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.AssemblyInfoInputs.cache
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.AssemblyInfo.cs
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.CoreCompileInputs.cache
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.csproj.CopyComplete
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.dll
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\refint\WindowsFormsApp Connected To LocalDB.dll
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.pdb
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp Connected To LocalDB.genruntimeconfig.cache
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\ref\WindowsFormsApp Connected To LocalDB.dll
+D:\Fixed File\WindowsFormsAppWithDB\obj\Debug\net7.0-windows\WindowsFormsApp_Connected_To_LocalDB.LessonsLogForm.resources

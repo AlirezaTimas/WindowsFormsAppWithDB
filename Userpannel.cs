@@ -19,6 +19,8 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         public PaymentLogForm paymentlogform = new PaymentLogForm();
         public SemesterRegistrationLogForm serlform = new SemesterRegistrationLogForm();
         public LessonChoosingForm lessonform = new LessonChoosingForm();
+        public LessonsLogForm Lessonlogform = new LessonsLogForm();
+
         public Userpannel()
         {
             InitializeComponent();
@@ -34,6 +36,7 @@ namespace WindowsFormsApp_Connected_To_LocalDB
             paymentlogform.balanceform = balancep;
             serlform.semesterregform = tuitionp;
             tuitionp.semlogform = serlform;
+            Lessonlogform.userpannel = this;
         }
 
         private void Userpannel_FormClosing(object sender, FormClosingEventArgs e)
@@ -93,6 +96,12 @@ namespace WindowsFormsApp_Connected_To_LocalDB
         {
             this.Hide();
             lessonform.Show();
+        }
+
+        private void LessonsLog_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Lessonlogform.Show();
         }
     }
 }
